@@ -1,0 +1,216 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(248, 240, 240); 
+    color: #444;
+}
+
+#nav ul {
+    display: flex; 
+    list-style: none; 
+    justify-content: space-between; 
+    padding: 1rem;
+    margin: 0;
+     
+}
+
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #cdd8cd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nav ul li {
+    margin: 0;
+}
+
+#nav ul li a {
+    padding: 1rem 1.5rem; 
+    text-decoration: none;
+    color: #545b54;
+    font-weight: 600;
+     border-bottom: 3px solid transparent;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+#nav ul li a:hover {
+    background-color: #9c9083;
+    color: #212d1e;
+    border-bottom: 3px solid #41583c; 
+    transform: translateY(-5px); 
+}
+
+
+.header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f4efef;
+     
+    
+}
+
+.header-text {
+  font-size: 2rem;
+  color: rgb(92, 128, 94);
+  position: absolute;
+  top: 10%; 
+  transform: translateY(-10%); 
+  white-space: nowrap; 
+  animation: slideText 15s linear infinite; 
+}
+
+
+@keyframes slideText {
+  0% {
+    left: 100%; 
+  }
+  100% {
+    left: -100%; 
+  }
+}
+
+
+h1, h2 {
+  color: #41583c;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+h1:hover, h2:hover {
+  color: #1e5d1f; /* New color on hover */
+  transform: scale(1.05); /*Enlarge title on scroll*/
+  transition: all 0.3s ; }
+
+section { /* Gradual appearance effects when scrolling down */
+    padding: 2.5rem;
+    background-color: #ffffff;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+section h2 {
+    border-bottom: 2px solid #79b97a;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 550px;
+    margin: 2rem auto; 
+    padding: 1.5rem;
+    background-color: #f0e5f3; 
+    border-radius: 15px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+form div {
+    margin-bottom: 1.25rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+#skills #Experince #Education #projects {
+    background-color: #cdd8cd;
+}
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #dddfde;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 0px;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    height: 400px;
+}
+
+#about img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 60%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    
+}
+img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enlarge image and add shadow */
+}
+
+#about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+form button {
+    padding: 0.75rem 1.75rem;
+    background-color: #949c88;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0b3713;
+    animation: pulse 0.7s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+  background-color: #41583c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top: 4px solid #79b97a;
+}
+
+footer a {
+  color: #79b97a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
